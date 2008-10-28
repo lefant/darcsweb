@@ -1,0 +1,2 @@
+version=3
+http://blitiri.com.ar/p/darcsweb/ files/(.*)/darcsweb-\1\.tar\.gz debian uupdate

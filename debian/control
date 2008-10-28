@@ -1,0 +1,22 @@
+Source: darcsweb
+Section: web
+Priority: optional
+Maintainer: fabian linzberger <e@lefant.net>
+Build-Depends: debhelper (>= 5)
+Standards-Version: 3.8.0
+Vcs-Browser: http://lefant.net/cgi-bin/darcsweb.cgi?r=darcsweb.debian;a=summary
+Vcs-Darcs: http://lefant.net/darcs/darcsweb.debian/
+Homepage: http://blitiri.com.ar/p/darcsweb/
+
+Package: darcsweb
+Architecture: all
+Depends: ${misc:Depends}, python (>= 2.3), darcs
+Recommends: apache2 | httpd-cgi
+Description: web interface for browsing darcs repositories
+ This is a simple web interface for darcs, inspired by gitweb. It's
+ written in Python and calls darcs to get most of the data.
+ .
+ It supports browsing records and their diffs, extracting diffs
+ against the current head, browsing the current tree, annotate,
+ provides an RSS feed and other stuff like that.
+ .

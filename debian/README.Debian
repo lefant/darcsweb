@@ -1,0 +1,20 @@
+darcsweb for Debian
+-------------------
+
+if you are running a flavour of apache(2), put your darcs repositories
+in /var/www/darcs and things should "just work".
+
+launch your webbrowser and go to http://yourhostname.com/darcsweb or use
+darcs get http://yourhostname.com/darcs/projectname to pull a copy.
+
+
+if you want to customise things, take a look at
+/etc/darcsweb/config.py, and maybe also /etc/apache/conf.d/darcsweb.conf.
+
+also take a look at /usr/share/doc/darcsweb/examples/mkconfig.py if
+you want to add configuration for many repositories automatically.
+
+
+happy (web)darcsing!
+
+ -- fabian linzberger <e@lefant.net>, Fri Jan 13 16:04:08 2006

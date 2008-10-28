@@ -1,0 +1,60 @@
+darcsweb (1.1-1) unstable; urgency=medium
+
+  * New upstream version fixing compatibility issues with the new darcs
+    2.0, (Closes: #502343)
+  * debian/control: s/X-Vcs-Darcs/Vcs-Darcs/, add Vcs-Browser field
+  * add ${misc:Depends} to Depends as suggested by morph
+  * recommend httpd-cgi instead of httpd, thanks to Stephane Glondu for
+    pointing it out. (Closes: #494013)
+  * cleanup debian/rules along suggestions of morph
+
+ -- fabian linzberger <e@lefant.net>  Tue, 28 Oct 2008 18:34:58 +0100
+
+darcsweb (1.0-1) unstable; urgency=low
+
+  * New upstream version (Closes: #491133, #399751, #421050).
+  * updated standards-version to 3.8.0 (nothing to be done)
+  * updated homepage, use new homepage field in debian/control
+  * updated download location in debian/watch file with new homepage also
+  * add unmodified upstream config.py.sample to examples since there
+    were some default config issues and it may help as documentation
+  * change repoencoding of class auto from "latin1" to "ascii",
+    "utf8", "latin1" as suggested by Rodrigo Campos (Closes: #420588).
+  * merged in changes from updated upstream example config file
+    (Closes: #444935, #419775).
+  * stop creating /var/www/darcs - according to
+    http://lintian.debian.org/tags/dir-or-file-in-var-www.html this is
+    the burden of the user
+
+ -- fabian linzberger <e@lefant.net>  Fri, 25 Jul 2008 07:37:43 +0200
+
+darcsweb (0.16-1) unstable; urgency=low
+
+  * New upstream version (Closes: #392860).
+  * updated Standards-Version to 3.7.2 (no-op)
+  * removed superfluous build-dependency to python
+  * updated config.py default config file to include new example settings
+    from upstream
+  * hardcode Depends: to python >= 2.3, drop dh_python from rules
+  * added X-Vcs-Darcs, thanks to maxx@debian.org for the hint
+  * bumped debhelper compatibility level (debian/compat) to 5, thanks to
+    marga@debian.org for the hint
+  
+ -- fabian linzberger <e@lefant.net>  Fri, 13 Oct 2006 18:48:33 +0200
+
+darcsweb (0.15-1) unstable; urgency=high
+
+  * New upstream version
+  * includes security fix, therefore bumping urgency
+  * removed minor patch to darcsweb.cgi for configfile location, it is now
+    included upstream
+  * included upstream typofixes to license in copyright file
+
+ -- fabian linzberger <e@lefant.net>  Sat, 25 Feb 2006 12:31:00 +0100
+
+darcsweb (0.14-1) unstable; urgency=low
+
+  * Initial release (Closes: #346564)
+
+ -- fabian linzberger <e@lefant.net>  Thu, 12 Jan 2006 18:46:36 +0100
+

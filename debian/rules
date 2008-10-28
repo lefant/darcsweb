@@ -1,0 +1,56 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+
+# Uncomment this to turn on verbose mode.
+# export DH_VERBOSE=1
+
+
+build:
+	dh_testdir
+
+clean:
+	dh_testdir
+	dh_testroot
+	dh_clean 
+
+install: build
+	dh_testdir
+	dh_testroot
+	dh_clean -k 
+	dh_installdirs
+	dh_install
+
+	dh_install debian/conf/darcsweb.conf etc/apache/conf.d
+	dh_install debian/conf/darcsweb.conf etc/apache-perl/conf.d
+	dh_install debian/conf/darcsweb.conf etc/apache-ssl/conf.d
+	dh_install debian/conf/darcsweb.conf etc/apache2/conf.d
+
+	dh_install debian/conf/config.py etc/darcsweb
+
+	dh_install darcs.png minidarcs.png style.css usr/share/darcsweb
+
+	chmod 0755 darcsweb.cgi
+	dh_install darcsweb.cgi usr/lib/cgi-bin
+
+
+# Build architecture-independent files here.
+binary-indep: build install
+	dh_testdir
+	dh_testroot
+	dh_installchangelogs 
+	dh_installdocs
+	dh_installexamples
+	dh_installman
+	dh_compress
+	dh_fixperms
+	dh_installdeb
+	dh_gencontrol
+	dh_md5sums
+	dh_builddeb
+
+# Build architecture-dependent files here.
+binary-arch: install
+
+
+binary: binary-indep binary-arch
+.PHONY: build clean binary-indep binary-arch binary install
