@@ -1,0 +1,16 @@
+
+darcsweb - A web interface for darcs
+Alberto Bertogli (albertito@blitiri.com.ar)
+---------------------------------------------
+
+This is a very simple web interface for darcs, inspired in gitweb (written by
+Kay Sievers and Christian Gierke).
+
+To configure, copy the "config.py.sample" file to "config.py" and edit it; you
+will configure your repositories there. Then just browse to the cgi file.
+
+If you have any question, suggestions or comments, please let me know.
+
+Thanks,
+		Alberto
+

@@ -1,0 +1,331 @@
+
+/* darcsweb CSS
+ * Alberto Bertogli (albertito@blitiri.com.ar)
+ *
+ * Copied almost entirely from gitweb's, written by Kay Sievers
+ * <kay.sievers@vrfy.org> and Christian Gierke <ch@gierke.de>.
+ */
+
+
+body {
+	font-family: sans-serif;
+	font-size: 12px;
+	margin:0px;
+	border:solid #d9d8d1;
+	border-width:1px;
+	margin:10px;
+}
+
+a {
+	color:#0000cc;
+}
+
+a:hover, a:visited, a:active {
+	color:#880000;
+}
+
+div.page_header {
+	height:25px;
+	padding:8px;
+	font-size:18px;
+	font-weight:bold;
+	background-color:#d9d8d1;
+}
+
+div.page_header a:visited {
+	color:#0000cc;
+}
+
+div.page_header a:hover {
+	color:#880000;
+}
+
+div.page_nav {
+	padding:8px;
+}
+div.page_nav a:visited {
+	color:#0000cc;
+}
+
+div.page_path {
+	padding:8px;
+	border:solid #d9d8d1;
+	border-width:0px 0px 1px
+}
+
+div.page_footer {
+	height:17px;
+	padding:4px 8px;
+	background-color: #d9d8d1;
+}
+
+div.page_footer_text {
+	float:left;
+	color:#555555;
+	font-style:italic;
+}
+
+div.page_body {
+	padding:8px;
+}
+
+div.search_box {
+	float:right;
+	text-align:right;
+}
+
+input.search_text {
+	font-size:xx-small;
+	background-color: #edece6;
+	vertical-align: top;
+}
+
+input.search_button {
+	font-size:xx-small;
+	vertical-align: top;
+}
+
+div.title, a.title {
+	display:block; padding:6px 8px;
+	font-weight:bold;
+	background-color:#edece6;
+	text-decoration:none;
+	color:#000000;
+}
+
+a.title:hover {
+	background-color: #d9d8d1;
+}
+
+div.title_text {
+	padding:6px 0px;
+	border: solid #d9d8d1;
+	border-width:0px 0px 1px;
+}
+
+div.log_body {
+	padding:8px 8px 8px 150px;
+}
+
+span.age {
+	position:relative;
+	float:left;
+	width:142px;
+	font-style:italic;
+}
+
+div.log_link {
+	padding:0px 8px;
+	font-size:10px;
+	font-family:sans-serif;
+	font-style:normal;
+	position:relative;
+	float:left;
+	width:136px;
+}
+
+div.list_head {
+	padding:6px 8px 4px;
+	border:solid #d9d8d1;
+	border-width:1px 0px 0px;
+	font-style:italic;
+}
+
+a.list {
+	text-decoration:none;
+	color:#000000;
+}
+
+a.list:hover {
+	text-decoration:underline;
+	color:#880000;
+}
+
+a.line {
+	text-decoration:none;
+	color:#000000;
+}
+
+a.line:hover {
+	text-decoration:none;
+	color:#880000;
+}
+
+table {
+	/*clear:both;*/
+	padding:8px 4px;
+}
+
+th {
+	padding:2px 5px;
+	font-size:12px;
+	text-align:left;
+}
+
+.light:hover {
+	background-color:#edece6;
+}
+
+.dark {
+	background-color:#f6f6f0;
+}
+
+.dark:hover {
+	background-color:#edece6;
+}
+
+.tag {
+	background-color:#f0f0ff;
+}
+
+.tag:hover {
+	background-color:#e0e0ff;
+}
+
+td {
+	padding:2px 5px;
+	font-size:12px;
+	vertical-align:top;
+}
+
+td.link {
+	padding:2px 5px;
+	font-family:sans-serif;
+	font-size:10px;
+}
+
+div.pre {
+	font-family:monospace;
+	font-size:12px;
+	white-space:pre;
+}
+
+div.diff_info {
+	font-family:monospace;
+	color:#000099;
+	background-color:#edece6;
+	font-style:italic;
+}
+
+div.index_include {
+	border:solid #d9d8d1;
+	border-width:0px 0px 1px;
+	padding:12px 8px;
+}
+
+div.search {
+	margin:4px 8px;
+	position:absolute;
+	top:56px;
+	right:12px;
+}
+
+a.linenr, .linenos {
+	color:#999999;
+	text-decoration:none;
+}
+
+a.annotate_desc {
+	color:#999999;
+	text-decoration:none;
+	font-size:11px;
+}
+
+a.annotate_desc:hover {
+	color:#880000;
+}
+
+a.rss_logo {
+	float:right;
+	padding:3px 0px;
+	width:35px;
+	line-height:10px;
+	border:1px solid;
+	border-color:#fcc7a5 #7d3302 #3e1a01 #ff954e;
+	color:#ffffff;
+	background-color:#ff6600;
+	font-weight:bold;
+	font-family:sans-serif;
+	font-size:10px;
+	text-align:center;
+	text-decoration:none;
+}
+
+a.rss_logo:hover {
+	background-color:#ee5500;
+}
+
+img.logo {
+	border-width:0px;
+	vertical-align:top;
+	margin-left:12pt;
+	margin-right:5pt;
+}
+
+
+/* Syntax highlighting related styles. This is highly dependent on what
+ * python-pygments generates.
+ * This was generated using the following commands in a python interpreter and
+ * slightly modified after.
+ * >>> import pygments
+ * >>> pygments.formatters.HtmlFormatter().get_style_defs('.page_body')
+ */
+.page_body table { margin: 0; padding: 0;}
+.page_body pre { margin : 0; padding: 0; }
+.page_body .c { color: #008800; font-style: italic } /* Comment */
+.page_body .err { border: 1px solid #FF0000 } /* Error */
+.page_body .k { color: #AA22FF; font-weight: bold } /* Keyword */
+.page_body .o { color: #666666 } /* Operator */
+.page_body .cm { color: #008800; font-style: italic } /* Comment.Multiline */
+.page_body .cp { color: #008800 } /* Comment.Preproc */
+.page_body .c1 { color: #008800; font-style: italic } /* Comment.Single */
+.page_body .gd { color: #A00000 } /* Generic.Deleted */
+.page_body .ge { font-style: italic } /* Generic.Emph */
+.page_body .gr { color: #FF0000 } /* Generic.Error */
+.page_body .gh { color: #000080; font-weight: bold } /* Generic.Heading */
+.page_body .gi { color: #00A000 } /* Generic.Inserted */
+.page_body .go { color: #808080 } /* Generic.Output */
+.page_body .gp { color: #000080; font-weight: bold } /* Generic.Prompt */
+.page_body .gs { font-weight: bold } /* Generic.Strong */
+.page_body .gu { color: #800080; font-weight: bold } /* Generic.Subheading */
+.page_body .gt { color: #0040D0 } /* Generic.Traceback */
+.page_body .kc { color: #AA22FF; font-weight: bold } /* Keyword.Constant */
+.page_body .kd { color: #AA22FF; font-weight: bold } /* Keyword.Declaration */
+.page_body .kp { color: #AA22FF } /* Keyword.Pseudo */
+.page_body .kr { color: #AA22FF; font-weight: bold } /* Keyword.Reserved */
+.page_body .kt { color: #AA22FF; font-weight: bold } /* Keyword.Type */
+.page_body .m { color: #666666 } /* Literal.Number */
+.page_body .s { color: #BB4444 } /* Literal.String */
+.page_body .na { color: #BB4444 } /* Name.Attribute */
+.page_body .nb { color: #AA22FF } /* Name.Builtin */
+.page_body .nc { color: #0000FF } /* Name.Class */
+.page_body .no { color: #880000 } /* Name.Constant */
+.page_body .nd { color: #AA22FF } /* Name.Decorator */
+.page_body .ni { color: #999999; font-weight: bold } /* Name.Entity */
+.page_body .ne { color: #D2413A; font-weight: bold } /* Name.Exception */
+.page_body .nf { color: #00A000 } /* Name.Function */
+.page_body .nl { color: #A0A000 } /* Name.Label */
+.page_body .nn { color: #0000FF; font-weight: bold } /* Name.Namespace */
+.page_body .nt { color: #008000; font-weight: bold } /* Name.Tag */
+.page_body .nv { color: #B8860B } /* Name.Variable */
+.page_body .ow { color: #AA22FF; font-weight: bold } /* Operator.Word */
+.page_body .mf { color: #666666 } /* Literal.Number.Float */
+.page_body .mh { color: #666666 } /* Literal.Number.Hex */
+.page_body .mi { color: #666666 } /* Literal.Number.Integer */
+.page_body .mo { color: #666666 } /* Literal.Number.Oct */
+.page_body .sb { color: #BB4444 } /* Literal.String.Backtick */
+.page_body .sc { color: #BB4444 } /* Literal.String.Char */
+.page_body .sd { color: #BB4444; font-style: italic } /* Literal.String.Doc */
+.page_body .s2 { color: #BB4444 } /* Literal.String.Double */
+.page_body .se { color: #BB6622; font-weight: bold } /* Literal.String.Escape */
+.page_body .sh { color: #BB4444 } /* Literal.String.Heredoc */
+.page_body .si { color: #BB6688; font-weight: bold } /* Literal.String.Interpol */
+.page_body .sx { color: #008000 } /* Literal.String.Other */
+.page_body .sr { color: #BB6688 } /* Literal.String.Regex */
+.page_body .s1 { color: #BB4444 } /* Literal.String.Single */
+.page_body .ss { color: #B8860B } /* Literal.String.Symbol */
+.page_body .bp { color: #AA22FF } /* Name.Builtin.Pseudo */
+.page_body .vc { color: #B8860B } /* Name.Variable.Class */
+.page_body .vg { color: #B8860B } /* Name.Variable.Global */
+.page_body .vi { color: #B8860B } /* Name.Variable.Instance */
+.page_body .il { color: #666666 } /* Literal.Number.Integer.Long */
