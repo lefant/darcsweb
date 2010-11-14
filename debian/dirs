@@ -1,6 +1,1 @@
-etc/apache
-etc/apache-perl
-etc/apache-ssl
-etc/apache2
 etc/darcsweb
-usr/lib/cgi-bin

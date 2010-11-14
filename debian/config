@@ -1,0 +1,14 @@
+#!/bin/sh
+set -e
+
+action=$1
+version=$2
+
+## Source debconf library
+. /usr/share/debconf/confmodule
+
+# which web-server should I use?
+db_input high darcsweb/webserver || true
+db_go || true
+
+exit 0

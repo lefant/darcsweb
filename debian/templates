@@ -1,0 +1,8 @@
+Template: darcsweb/webserver
+Type: select
+__Choices: Apache, Apache-SSL, Apache2, All, None
+Default: Apache2
+_Description: Webserver type:
+ Which kind of web server should be used by darcsweb
+ .
+ Select "None" if you would like to configure your webserver by hand.
