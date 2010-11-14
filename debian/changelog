@@ -1,16 +1,11 @@
-darcsweb (1.1-2~3.gbp6b5dbd) UNRELEASED; urgency=low
-
-  ** SNAPSHOT build @6b5dbd2d21adfc54916e3a9c534d285c48841f3c **
+darcsweb (1.1-2) unstable; urgency=low
 
   * [4b7e40c7] darcsweb: stop shipping files in /etc/apache/ bug fixed
   * [70794dbd] [control] added Erik Wenzel (my self) to Uploaders field
   * [c657d43f] [control] bumped standards version (nothing changed)
-  * [fab0f1c4] Created debian/changelog for release (1.1-2~1.gbpc657d4)
-  * [636250c7] [control] fixed typo in field name
-  * [70f67556] Created debian/changelog for release (1.1-2~2.gbp636250)
   * [6b5dbd2d] Switch to dpkg-source 3.0 (quilt) format
 
- -- Erik Wenzel <erik@debian.org>  Sun, 14 Nov 2010 23:57:47 +0100
+ -- Erik Wenzel <erik@debian.org>  Mon, 15 Nov 2010 00:05:25 +0100
 
 darcsweb (1.1-1) unstable; urgency=medium
 
