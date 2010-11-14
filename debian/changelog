@@ -1,3 +1,13 @@
+darcsweb (1.1-2~1.gbpc657d4) UNRELEASED; urgency=low
+
+  ** SNAPSHOT build @c657d43f944075a872cf26e617a9f41fd5e32bcb **
+
+  * [4b7e40c7] darcsweb: stop shipping files in /etc/apache/ bug fixed
+  * [70794dbd] [control] added Erik Wenzel (my self) to Uploaders field
+  * [c657d43f] [control] bumped standards version (nothing changed)
+
+ -- Erik Wenzel <erik@debian.org>  Sun, 14 Nov 2010 23:30:30 +0100
+
 darcsweb (1.1-1) unstable; urgency=medium
 
   * New upstream version fixing compatibility issues with the new darcs
