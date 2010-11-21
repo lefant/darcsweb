@@ -5,8 +5,8 @@ Maintainer: Fabian Linzberger <e@lefant.net>
 Uploaders: Erik Wenzel <erik@debian.org>
 Build-Depends: debhelper (>= 7), po-debconf
 Standards-Version: 3.9.1
-Vcs-Browser: http://lefant.net/cgi-bin/darcsweb.cgi?r=darcsweb.debian;a=summary
-Vcs-Darcs: http://lefant.net/darcs/darcsweb.debian/
+Vcs-Browser: http://git.lefant.net/cgi-bin/gitweb.cgi/darcsweb.git
+Vcs-Git: git://git.lefant.net/darcsweb.git
 Homepage: http://blitiri.com.ar/p/darcsweb/
 
 Package: darcsweb
