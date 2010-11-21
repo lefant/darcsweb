@@ -1,7 +1,7 @@
 Source: darcsweb
 Section: web
 Priority: optional
-Maintainer: fabian linzberger <e@lefant.net>
+Maintainer: Fabian Linzberger <e@lefant.net>
 Uploaders: Erik Wenzel <erik@debian.org>
 Build-Depends: debhelper (>= 7), po-debconf
 Standards-Version: 3.9.1
