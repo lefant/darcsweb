@@ -1,6 +1,5 @@
 #! /bin/sh
 # postinst script for darcsweb
-set -x
 #
 # see: dh_installdeb(1)
 
