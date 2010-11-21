@@ -1,3 +1,13 @@
+darcsweb (1.1-3~1.gbp19e938) UNRELEASED; urgency=low
+
+  ** SNAPSHOT build @19e9386b135ffd8f01da3efb642dfc94366a3d3b **
+
+  * [29966d1d] stop lowercase name in maintainer field insanity
+  * [19e9386b] replace obsolete/broken vcs-darcs field with provisional
+    vcs-git
+
+ -- Fabian Linzberger <e@lefant.net>  Sun, 21 Nov 2010 10:19:24 +0100
+
 darcsweb (1.1-2) unstable; urgency=low
 
   * [4b7e40c7] darcsweb: stop shipping files in /etc/apache/ bug fixed
